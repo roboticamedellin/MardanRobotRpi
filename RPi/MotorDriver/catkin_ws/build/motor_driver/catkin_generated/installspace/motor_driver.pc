@@ -1,8 +1,0 @@
-prefix=/catkin_ws/install
-
-Name: motor_driver
-Description: Description of motor_driver
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

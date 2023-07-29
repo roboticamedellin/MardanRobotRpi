@@ -1,8 +1,0 @@
-prefix=/catkin_ws/install
-
-Name: video_streamming
-Description: Description of video_streamming
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

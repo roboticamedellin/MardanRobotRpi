@@ -8,7 +8,6 @@ source ${PROJECT_ROOT}/config.sh
 docker run -it \
   --name=${PROJECT_NAME} \
   --device=/dev/ttyACM0 \
-  --device=/dev/hidraw0 \
   --volume /dev/serial \
   --volume ${PROJECT_ROOT}/src:/arduino \
   --rm \

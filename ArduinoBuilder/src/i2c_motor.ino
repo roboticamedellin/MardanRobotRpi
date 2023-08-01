@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <ZumoMotors.h>
 
-#define I2C_SLAVE_ADDRESS  0x04
+#define I2C_SLAVE_ADDRESS  0x11
 
 ZumoMotors motors;
 
@@ -53,5 +53,10 @@ void receiveData(int byteCount) {
 
   motorSpeed.leftSpeed = vel_l.value;
   motorSpeed.rightSpeed = vel_r.value;
+
+  Serial.print("leftSpeed: ");
+  Serial.print(motorSpeed.leftSpeed);
+  Serial.print("\t rightSpeed: ");
+  Serial.println(motorSpeed.rightSpeed);
   
 }

@@ -14,7 +14,7 @@ def int_to_bytes_array(value):
 
     return result
 
-def init_i2c_bus(i2c_address = 0x04):
+def init_i2c_bus(i2c_address = 0x11):
     global bus
     global address
     bus = smbus.SMBus(1)

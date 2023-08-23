@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     gstreamer1.0-alsa \
     gstreamer1.0-pulseaudio
 
-EXPOSE 8080
+RUN mkdir -p /catkin_ws/src
 
 COPY ./autostart.sh /
 RUN chmod +x /autostart.sh

@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN apt-get install python-smbus -y
 
+RUN mkdir -p /catkin_ws/src
+
 COPY ./autostart.sh /
 RUN chmod +x /autostart.sh
 ENTRYPOINT /autostart.sh

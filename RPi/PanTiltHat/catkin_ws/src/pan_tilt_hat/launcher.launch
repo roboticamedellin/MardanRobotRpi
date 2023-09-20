@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="pan_tilt_hat" type="pan_tilt.py" name="pan_tilt_1"/>
-</launch>

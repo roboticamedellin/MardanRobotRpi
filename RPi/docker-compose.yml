@@ -18,7 +18,7 @@ services:
     devices:
       - /dev/i2c-1
     volumes:
-      - ./MotorDriver/catkin_ws:/catkin_ws
+      - ./MotorDriver/src:/catkin_ws/src
     depends_on:
       - ros_master
     environment:
@@ -31,7 +31,7 @@ services:
     build:
       context: ./RobotApplication
     volumes:
-      - ./RobotApplication/catkin_ws:/catkin_ws
+      - ./RobotApplication/src:/catkin_ws/src
     depends_on:
       - ros_master
     environment:
@@ -63,7 +63,7 @@ services:
     devices:
       - /dev/video0
     volumes:
-      - ./VideoStreaming/catkin_ws:/catkin_ws
+      - ./VideoStreaming/src:/catkin_ws/src
     depends_on:
       - ros_master
     environment:

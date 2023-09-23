@@ -8,7 +8,6 @@ source ${PROJECT_ROOT}/config.sh
 docker run -it \
   -p ${SERVER_PORT}:${SERVER_PORT} \
   --name=${PROJECT_NAME} \
-  --volume ${PROJECT_ROOT}/catkin_ws:/catkin_ws \
   --volume ${PROJECT_ROOT}/nodejs_ros_server:/nodejs_ros_server \
   --rm \
   ${PROJECT_NAME}
